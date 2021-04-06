@@ -8,15 +8,15 @@ moving up to supporting a generic domain object (which deals with the object to 
 or "subclass" for real domain objects like User and Photo.
 
 It also is intended as a worked example to support the architectural rules outlined in the following article: 
-'''
+```
 https://www.infoq.com/articles/arm-enterprise-applications/
-'''
+```
 which proposes five 'layers' or 'strata' within which modules should be placed - depending on what they do and the nature of the code they contain. The strata are 'interface', 'application', 'domain', 'infrastructure' and 'platform' - see the article for a full description.
 
 It will help to understand the modular structure used here if you look at that.
 
 ## Source file depenency structure
-'''
+```
 User        Photo
 |             |
 |             | 
@@ -41,7 +41,7 @@ db
 |              |
 V              V
 utils         ass
-'''
+```
 The dependency hierarchy is, of course, an Acylic Graph structure (as per the Acyclic Dependency Princple). But that is mandated, in any case, by the ARM layering in the article mentioned above. All dependencies must point-down (which means, they can't form a cycle).
 
 ## Source files and their position in the layer/strata orderinging 
