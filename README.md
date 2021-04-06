@@ -44,7 +44,7 @@ utils         ass
 ```
 The dependency hierarchy is, of course, an Acylic Graph structure (as per the Acyclic Dependency Princple). But that is mandated, in any case, by the ARM layering in the article mentioned above. All dependencies must point-down (which means, they can't form a cycle).
 
-## Source files and their position in the layer/strata orderinging 
+## Source files and their position in the layer/strata ordering.
 (Layers/strata are shown top to bottom here as per the diagram in the article above).
 
 
