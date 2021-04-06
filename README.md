@@ -47,10 +47,16 @@ The dependency hierarchy is, of course, an Acylic Graph structure (as per the Ac
 ## Source files and their position in the layer/strata ordering.
 (Layers/strata are shown top to bottom here as per the diagram in the article above).
 
+[*interface layer/strata*]
+* not shown in this example.
 
+[*application layer/strata*]
+* not shown in this example.
 
 [*domain layer/strata*]
-TBD.
+Apart from object specific error handling - e.g. a user-name must be 8 chars long - these modules delegate (via prototype inheritance) of their work to the lower layers/strata.
+* User.js - domain object representing a system user.
+* Photo.js - domain object representing a photo used in the system.
 
 [*infrastructure layer/strata*]
 * DomainObject.js - a generic and 'abstract' infrastructure object than can be prototypically inherited from by all real domain objects. It provides the core structure for loading and saving objects from and to the database. It also manages lazy loading of .domain objects from tables in the DB.
