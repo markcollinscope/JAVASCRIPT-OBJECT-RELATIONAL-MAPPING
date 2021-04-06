@@ -15,6 +15,35 @@ which proposes five 'layers' or 'strata' within which modules should be placed -
 
 It will help to understand the modular structure used here if you look at that.
 
+## Source file depenency structure
+'''
+User        Photo
+|             |
+|             | 
+|-------------- (inherit from - by phototype, import from too)
+|
+_
+V
+DomainObject
+|
+| (imports from)
+|
+V
+dbtxwrap
+|
+| (imports from)
+|
+V
+db
+|
+| (imports from
+|--------------|
+|              |
+V              V
+utils         ass
+'''
+The dependency hierarchy is, of course, an Acylic Graph structure (as per the Acyclic Dependency Princple). But that is mandated, in any case, by the ARM layering in the article mentioned above. All dependencies must point-down (which means, they can't form a cycle).
+
 ## Source files and their position in the layer/strata orderinging 
 (Layers/strata are shown top to bottom here as per the diagram in the article above).
 
