@@ -5,7 +5,7 @@ on real domain objects (user, etc) and mapping these down to relational tables.
 
 It shows a graduated layering of code over the top of the *npm mysql* package - starting with a synchronous database module supporting transactions and 
 moving up to supporting a generic domain object (which deals with the object to relational mapping issue) which is in turn the prototype (JS inheritance style) 
-or "subclass" for real domain objects like User and Photo.
+or "subclass" (not really the correct term - this is JS) for real domain objects like User and Photo.
 
 It also is intended as a worked example to support the architectural rules outlined in the following article: 
 
@@ -69,3 +69,4 @@ Apart from object specific error handling - e.g. a user-name must be 8 chars lon
 * the npm "mysql" package,
 * the npm "wait.for" package (which saved me from callback hell). *Wait.for* is interesting, its a bit like JS *await* - but predates it by a few years - and only runs in nodejs (it requires nodejs fibers)].
 * nodejs - on which this system was based.
+
