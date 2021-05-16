@@ -1,6 +1,6 @@
 # Javascript-Object-to-Relational-Mapping
 
-This is a smallish part of some production code for a mysql database based system that is on the web. The web interface is not shown here - this code focuses 
+This is a smallish part of some *production* code for a mysql database based system that is on the web. The web interface is not shown here - this code focuses 
 on real domain objects (user, etc) and mapping these down to relational tables.
 
 It shows a graduated layering of code over the top of the *npm mysql* package - starting with a synchronous database module supporting transactions and 
@@ -28,7 +28,11 @@ DomainObject
 |
 | (imports from)
 |
-V
+VIt also is intended as a worked example to support the architectural rules outlined in the following article:
+
+https://www.infoq.com/articles/arm-enterprise-applications/ - An Architectural Reference Model for Larger Applications.
+
+which proposes five 'layers' or 'strata' within which modules should be placed - depending on what they do and the nature of the code they contain. The strata are 'interface', 'application', 'domain', 'infrastructure' and 'platform' - see the article for a full description.
 dbtxwrap
 |
 | (imports from)
