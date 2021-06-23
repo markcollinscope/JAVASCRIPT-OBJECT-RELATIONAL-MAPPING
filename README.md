@@ -28,11 +28,7 @@ DomainObject
 |
 | (imports from)
 |
-VIt also is intended as a worked example to support the architectural rules outlined in the following article:
-
-https://www.infoq.com/articles/arm-enterprise-applications/ - An Architectural Reference Model for Larger Applications.
-
-which proposes five 'layers' or 'strata' within which modules should be placed - depending on what they do and the nature of the code they contain. The strata are 'interface', 'application', 'domain', 'infrastructure' and 'platform' - see the article for a full description.
+V
 dbtxwrap
 |
 | (imports from)
