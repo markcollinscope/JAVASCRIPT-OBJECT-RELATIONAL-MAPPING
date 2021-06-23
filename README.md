@@ -20,7 +20,7 @@ It will help to understand the modular structure used here if you look at that.
 User        Photo
 |             |
 |             | 
-|-------------- (inherit from - by phototype, import from too)
+|-------------- (inherits from - by prototype, also imports from)
 |
 _
 V
