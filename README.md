@@ -15,6 +15,8 @@ which proposes five 'layers' or 'strata' within which modules should be placed -
 
 It will help to understand the modular structure used here if you look at that.
 
+NB: this code was written c. 2015, so it does not use modern JS features. It basically uses the "Module/Object" JS pattern, which utilised JS closures to 'hide' private data (in the OO/Class sense). It does, however, guarantee complete encapsulation - which is more than can be said for JS - even c. 2020! For the record, nowadays I'm far more focused on Typescript, in any case.
+
 ## Source file depenency structure
 ```
 User        Photo
